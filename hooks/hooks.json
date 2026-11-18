@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "if (-not (Get-Command uv -ErrorAction SilentlyContinue)) { $s = if ($env:CLAUDE_PLUGIN_ROOT) { Join-Path $env:CLAUDE_PLUGIN_ROOT 'hooks/check-uv.ps1' }; if ($s -and (Test-Path $s)) { powershell -NoProfile -ExecutionPolicy Bypass -File $s } else { @{ systemMessage = 'inventor plugin: uv is not installed. Install it with: winget install --id astral-sh.uv, then restart Claude Code.' } | ConvertTo-Json -Compress } }"
+          }
+        ]
+      }
+    ]
+  }
+}

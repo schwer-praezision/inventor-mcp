@@ -1,6 +1,6 @@
 # SessionStart hook of the inventor plugin: warns when uv is missing.
-# Prints Claude Code hook JSON. Called from the hook declared in the schwer-claude-plugins
-# marketplace via $env:CLAUDE_PLUGIN_ROOT. Keep this file ASCII-only: Windows PowerShell 5.1
+# Prints Claude Code hook JSON. Called from hooks/hooks.json
+# via $env:CLAUDE_PLUGIN_ROOT. Keep this file ASCII-only: Windows PowerShell 5.1
 # reads BOM-less scripts as ANSI, so non-ASCII characters are built from char codes.
 # -Lang overrides the system UI language (e.g. for testing); -Force skips the uv check.
 
