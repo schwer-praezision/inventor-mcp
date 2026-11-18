@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "inventor": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--no-project",
+        "--python",
+        "3.12",
+        "--with",
+        "mcp[cli]>=1.0.0,<2",
+        "--with",
+        "pywin32>=306",
+        "python",
+        "-P",
+        "-m",
+        "src.server"
+      ],
+      "env": {
+        "PYTHONPATH": "${CLAUDE_PLUGIN_ROOT}",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    }
+  }
+}
