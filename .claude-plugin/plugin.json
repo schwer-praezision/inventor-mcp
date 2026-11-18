@@ -1,0 +1,11 @@
+{
+  "name": "inventor",
+  "description": "Parametric 3D modeling in Autodesk Inventor via MCP with the inventor-modeling and inventor-din-parts skills. Windows only; requires uv (provides Python 3.12, mcp 1.x and pywin32 automatically).",
+  "author": {
+    "name": "NeonGlay"
+  },
+  "homepage": "https://github.com/schwer-praezision/inventor-mcp",
+  "repository": "https://github.com/schwer-praezision/inventor-mcp",
+  "license": "MIT",
+  "keywords": ["autodesk", "inventor", "cad", "mcp"]
+}
